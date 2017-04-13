@@ -115,15 +115,15 @@ filter(mytable,Year==2016)%>%calendarPlot(.,pollutant="AQI",breaks=breaks,labels
 ```
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar1.png" width = "500" height = "450" alt="calendar1" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar1.png" width = "550" height = "450" alt="calendar1" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar2.png" width = "500" height = "450" alt="calendar2" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar2.png" width = "550" height = "450" alt="calendar2" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar3.png" width = "500" height = "450" alt="calendar3" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar3.png" width = "550" height = "450" alt="calendar3" align=center />
 </div>
 
 接下来让我们疯狂一把，将北京三年的空气质量指标AQI用一幅图形尽数呈现。<br>
@@ -200,6 +200,11 @@ showtext.end()
 dev.off()
 ```
 
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle4.png" width = "550" height = "450" alt="ECOCircle4" align=center />
+</div>
+
+
 ```r
 #这里使用geom_raster()图层进行映射（不支持极坐标转换）
 breaks<-aggregate(ID~Month,data=mydata11[mydata11$Year==2014,],FUN=median)
@@ -231,6 +236,11 @@ plot.margin=unit(c(.5,.5,.5,.5),"lines")
 showtext.end()
 dev.off()
 ```
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle5.png" width = "550" height = "450" alt="ECOCircle5" align=center />
+</div>
+
 
 ```r
 #作图方法2：（虽然代码多但是调整相对自由）
@@ -276,6 +286,21 @@ plot.margin=unit(c(.5,.5,.5,.5),"lines"),
 showtext.end()
 dev.off()
 ```
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "550" height = "450" alt="ECOCircle2" align=center />
+</div>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "550" height = "450" alt="ECOCircle3" align=center />
+</div>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "550" height = "450" alt="ECOCircle6" align=center />
+</div>
+
+
+----------------------------
 
 
 联系方式：
