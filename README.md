@@ -118,13 +118,19 @@ filter(mytable,Year==2016)%>%calendarPlot(.,pollutant="AQI",breaks=breaks,labels
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar1.png" width = "550" height = "400" alt="calendar1" align=center />
 </div>
 
+
+
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar2.png" width = "550" height = "400" alt="calendar2" align=center />
 </div>
 
+
+
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar3.png" width = "550" height = "400" alt="calendar3" align=center />
 </div>
+
+
 
 接下来让我们疯狂一把，将北京三年的空气质量指标AQI用一幅图形尽数呈现。<br>
 
