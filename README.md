@@ -43,7 +43,7 @@ url<- paste("https://www.aqistudy.cn/historydata/daydata.php?city=北京&month="
 
 
 ```r
-#先写完一个看下具体情况:<br>
+#先写完一个看下具体情况:
 tbls<-read_html(url[1],encoding="utf-8")%>%html_table(.,header=TRUE,trim=TRUE);tbls<-tbls[[1]]
 mytable<-data.frame()
 for (i in url){
@@ -81,7 +81,7 @@ mytable<-read.csv("beijingtianqi.csv",stringsAsFactors=FALSE,check.names=FALSE)
 ```
 
 ```r
-#查看数据结构和变量属性是否符合分析需要：<br>
+#查看数据结构和变量属性是否符合分析需要：
 str(mytable)
 'data.frame':	1096 obs. of  11 variables:
  $ 日期    : chr  "2014-01-01" "2014-01-02" "2014-01-03" "2014-01-04" ...
@@ -100,7 +100,7 @@ str(mytable)
 -------------------------
 
 
-####定义日期变量格式：<br>
+定义日期变量格式：<br>
 
 
 ```r
@@ -118,9 +118,9 @@ filter(mytable,Year==2016)%>%calendarPlot(.,pollutant="AQI",breaks=breaks,labels
 ```
 
 
-####接下来让我们疯狂一把，将北京三年的空气质量指标AQI用一幅图形尽数呈现。<br>
+接下来让我们疯狂一把，将北京三年的空气质量指标AQI用一幅图形尽数呈现。<br>
 
-#####首先要生成一个副本数据：<br>
+首先要生成一个副本数据：<br>
 
 ```r
 mydata1<-mytable
@@ -130,7 +130,7 @@ myasst<-mydata11[mydata11$date %in% as.Date(c("2014-01-01","2015-01-01","2016-01
 mydata11<-rbind(mydata11,myasst)
 ```
 
-####因为作图需要，2016年是闰年，2月有29天，14、15年均为28天，会导致最终数据不等长，影响之后的图表制作过程，这里暂且将其去除。<br>
+因为作图需要，2016年是闰年，2月有29天，14、15年均为28天，会导致最终数据不等长，影响之后的图表制作过程，这里暂且将其去除。<br>
 ```r
 mydata11<-arrange(mydata11,Year,date)
 mydata11<-mydata11[mydata11$date!="2016-02-29",]
@@ -161,7 +161,7 @@ mydata11$FADD<-cut(mydata11$AQI,breaks=c(0,50,100,150,200,300,500),labels=c("0~5
 ```
 
 ```r
-#作图方法1：（简便方法，但效果不太好调整）<br>
+#作图方法1：（简便方法，但效果不太好调整）
 CairoPNG(file="ECOCirclejj.png",width=1488,height=996)
 showtext.begin()
 ggplot(data=mydata11)+
@@ -193,7 +193,7 @@ dev.off()
 ```
 
 ```r
-#这里使用geom_raster()图层进行映射（不支持极坐标转换）<br>
+#这里使用geom_raster()图层进行映射（不支持极坐标转换）
 breaks<-aggregate(ID~Month,data=mydata11[mydata11$Year==2014,],FUN=median)
 CairoPNG(file="ECOCirclejjj.png",width=1200,height=600)
 showtext.begin()
@@ -225,7 +225,7 @@ dev.off()
 ```
 
 ```r
-#作图方法2：（虽然代码多但是调整相对自由）<br>
+#作图方法2：（虽然代码多但是调整相对自由）
 setwd("F:/微信公众号/公众号——数据小魔方/2017年4月/20170404")
 font.add("myfont","msyhl.ttc")
 CairoPNG(file="ECOCircle.png",width=1488,height=996)
