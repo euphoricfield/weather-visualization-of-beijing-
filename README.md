@@ -201,7 +201,7 @@ dev.off()
 ```
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle4.png" width = "550" height = "450" alt="ECOCircle4" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle4.png" width = "750" height = "500" alt="ECOCircle4" align=center />
 </div>
 
 
@@ -238,7 +238,7 @@ dev.off()
 ```
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle5.png" width = "550" height = "450" alt="ECOCircle5" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle5.png" width = "750" height = "500" alt="ECOCircle5" align=center />
 </div>
 
 
@@ -288,15 +288,15 @@ dev.off()
 ```
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "550" height = "450" alt="ECOCircle2" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "750" height = "500" alt="ECOCircle2" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "550" height = "450" alt="ECOCircle3" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "750" height = "500" alt="ECOCircle3" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "550" height = "450" alt="ECOCircle6" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "750" height = "500" alt="ECOCircle6" align=center />
 </div>
 
 
