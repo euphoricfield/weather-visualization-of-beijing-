@@ -41,7 +41,6 @@ url<- paste("https://www.aqistudy.cn/historydata/daydata.php?city=北京&month="
 > 以上过程构造了北京市2014~2016年三整年的历史空气质量数据：<br>
 
 
-
 ```r
 #先写完一个看下具体情况:
 tbls<-read_html(url[1],encoding="utf-8")%>%html_table(.,header=TRUE,trim=TRUE);tbls<-tbls[[1]]
@@ -99,9 +98,7 @@ str(mytable)
 
 -------------------------
 
-
 定义日期变量格式：<br>
-
 
 ```r
 mytable$日期<-as.Date(mytable$日期)
@@ -117,6 +114,17 @@ filter(mytable,Year==2015)%>%calendarPlot(.,pollutant="AQI",breaks=breaks,labels
 filter(mytable,Year==2016)%>%calendarPlot(.,pollutant="AQI",breaks=breaks,labels=label,year=2016)
 ```
 
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar1.png" width = "500" height = "450" alt="calendar1" align=center />
+</div>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar2.png" width = "500" height = "450" alt="calendar2" align=center />
+</div>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/calendar3.png" width = "500" height = "450" alt="calendar3" align=center />
+</div>
 
 接下来让我们疯狂一把，将北京三年的空气质量指标AQI用一幅图形尽数呈现。<br>
 
@@ -269,3 +277,30 @@ showtext.end()
 dev.off()
 ```
 
+
+联系方式：
+----------------------------------------------------
+wechat：ljty1991  <br>
+Mail:578708965@qq.com <br>
+个人公众号：数据小魔方（datamofang） <br>
+团队公众号：EasyCharts <br>
+qq交流群：[魔方学院]553270834
+
+个人简介：
+-------------------------------------------------
+**杜雨** <br>
+财经专业研究僧； <br>
+伪数据可视化达人； <br>
+文科背景的编程小白； <br>
+喜欢研究商务图表与地理信息数据可视化，爱倒腾PowerBI、SAP DashBoard、Tableau、R ggplot2、Think-cell chart等诸如此类的数据可视化软件，创建并运营微信公众号“数据小魔方”。 <br>
+Mail:578708965@qq.com <br>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/FontMap-of-China/blob/master/Image/resume.png" width = "550" height = "300" alt="resume" align=center />
+</div>
+
+-------------------------------------------
+
+备注信息：
+----------------------------------------------------
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
