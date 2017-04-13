@@ -288,15 +288,15 @@ dev.off()
 ```
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "650" height = "400" alt="ECOCircle2" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "650" height = "430" alt="ECOCircle2" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "650" height = "400" alt="ECOCircle3" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "650" height = "430" alt="ECOCircle3" align=center />
 </div>
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "650" height = "400" alt="ECOCircle6" align=center />
+<img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "650" height = "430" alt="ECOCircle6" align=center />
 </div>
 
 
