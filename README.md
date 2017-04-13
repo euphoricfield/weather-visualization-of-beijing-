@@ -297,9 +297,13 @@ dev.off()
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle2.png" width = "650" height = "440" alt="ECOCircle2" align=center />
 </div>
 
+<br>
+
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle3.png" width = "650" height = "440" alt="ECOCircle3" align=center />
 </div>
+
+<br>
 
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/weather-visualization-of-beijing-/blob/master/Image/ECOCircle6.png" width = "650" height = "440" alt="ECOCircle6" align=center />
